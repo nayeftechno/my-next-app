@@ -1,11 +1,15 @@
 import type { NextPage } from "next";
+import RenderHead from "../src/components/RenderHead";
 const HomePage: NextPage = () => {
   return (
-    <div className="row">
-      <div className="col-md-12">
-        <h4>Home Page</h4>
+    <>
+      <RenderHead title="Home" />
+      <div className="row">
+        <div className="col-md-12">
+          <h4>Home Page</h4>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 export default HomePage;
