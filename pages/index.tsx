@@ -6,7 +6,7 @@ const HomePage: NextPage = () => {
       <RenderHead title="Home" />
       <div className="row">
         <div className="col-md-12">
-          <h4>Home Page 2021</h4>
+          <h4>Home Page 2021 😅 😅 😅</h4>
           <p>
             <strong>Lorem Ipsum</strong> is simply dummy text of the printing
             and typesetting industry. Lorem Ipsum has been the industry's
