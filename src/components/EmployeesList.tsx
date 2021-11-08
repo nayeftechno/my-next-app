@@ -7,6 +7,19 @@ const EmployesList: FC = () => {
   useEffect(() => {
     getAllEmployees();
   }, []);
-  return <h1>TEST {getEmployees.length}</h1>;
+  const renderList = () => {
+    return (
+      <ul className="list-group">
+        {[...getEmployees].map(({ Id, Name }, index) => {
+          return (
+            <li key={Id} className="list-group-item">
+              {index + 1} - {Name}
+            </li>
+          );
+        })}
+      </ul>
+    );
+  };
+  return <>{getEmployees.length ? renderList() : <h4>Loading....</h4>}</>;
 };
 export default observer(EmployesList);

@@ -6,8 +6,9 @@ const EmployeesPage: NextPage = () => {
     <>
       <RenderHead title="Employees" />
       <div className="row">
-        <div className="col-md-12">
-          <h4>Employees Page</h4>
+        <div className="col-md-4">Form</div>
+        <div className="col-md-4">Statics</div>
+        <div className="col-md-4">
           <EmployeesList />
         </div>
       </div>
